@@ -1,0 +1,278 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: http://127.0.0.1:5501/frontend/index.html
+Subject: Parking Occupancy: 83%
+Date: Tue, 26 May 2026 16:19:44 +0530
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--f1x135s6Cda8zUJyYFJQTJw0cMkQpAz1A7hy6qGhcg----"
+
+
+------MultipartBoundary--f1x135s6Cda8zUJyYFJQTJw0cMkQpAz1A7hy6qGhcg----
+Content-Type: text/html
+Content-ID: <frame-2EBC35E9CE27E397AEA5A64A71BCB1D5@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://127.0.0.1:5501/frontend/index.html
+
+<!DOCTYPE html><html lang=3D"en"><head><meta http-equiv=3D"Content-Type" co=
+ntent=3D"text/html; charset=3DUTF-8">
+ =20
+  <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D=
+1.0">
+
+  <title>Parking Occupancy: 83%</title>
+
+  <link rel=3D"stylesheet" href=3D"http://127.0.0.1:5501/frontend/style.css=
+">
+</head>
+
+<body>
+
+  <!-- Background Effect -->
+  <div class=3D"background-glow"></div>
+
+  <!-- Navbar -->
+  <nav class=3D"navbar">
+
+    <div>
+      <h1>Smart Parking Detection System</h1>
+      <p>Real-time AI powered parking monitoring dashboard</p>
+    </div>
+
+    <div class=3D"system-status">
+      <span class=3D"live-dot"></span>
+      <span>System Active</span>
+    </div>
+
+  </nav>
+
+  <!-- Main Container -->
+  <main class=3D"container">
+
+    <!-- Statistics Cards -->
+    <section class=3D"stats-grid">
+
+      <div class=3D"card">
+        <h3>Total Slots</h3>
+        <h2 id=3D"total-slots">69</h2>
+      </div>
+
+      <div class=3D"card">
+        <h3>Occupied Slots</h3>
+        <h2 id=3D"occupied-slots">57</h2>
+      </div>
+
+      <div class=3D"card">
+        <h3>Available Slots</h3>
+        <h2 id=3D"available-slots">12</h2>
+      </div>
+
+      <div class=3D"card">
+        <h3>Occupancy</h3>
+        <h2 id=3D"occupancy" style=3D"color: rgb(239, 68, 68);">83%</h2>
+      </div>
+
+    </section>
+
+    <!-- Middle Section -->
+    <section class=3D"middle-section">
+
+      <!-- Live Video Feed -->
+      <div class=3D"camera-feed">
+
+        <div class=3D"section-header">
+          <h2>Live Parking Feed</h2>
+          <span class=3D"live">LIVE</span>
+        </div>
+
+        <img src=3D"http://127.0.0.1:5000/video" alt=3D"Live Parking Feed" =
+class=3D"video-stream">
+
+      </div>
+
+      <!-- Side Panel -->
+      <div class=3D"side-panel">
+
+        <!-- Parking Status -->
+        <div class=3D"status-panel">
+
+          <h2>Parking Status</h2>
+
+          <div class=3D"status-item available">
+            <span>Slot A1</span>
+            <span>Available</span>
+          </div>
+
+          <div class=3D"status-item occupied">
+            <span>Slot A2</span>
+            <span>Occupied</span>
+          </div>
+
+          <div class=3D"status-item available">
+            <span>Slot B1</span>
+            <span>Available</span>
+          </div>
+
+          <div class=3D"status-item occupied">
+            <span>Slot B2</span>
+            <span>Occupied</span>
+          </div>
+
+          <div class=3D"status-item available">
+            <span>Slot C1</span>
+            <span>Available</span>
+          </div>
+
+          <div class=3D"status-item occupied">
+            <span>Slot C2</span>
+            <span>Occupied</span>
+          </div>
+
+        </div>
+
+        <!-- Alerts Panel -->
+        <div class=3D"alerts-panel">
+
+          <h2>Recent Alerts</h2>
+
+          <div class=3D"alert-box">
+            <p>Parking occupancy reached 68%</p>
+            <span>2 mins ago</span>
+          </div>
+
+          <div class=3D"alert-box">
+            <p>Vehicle detected at Slot B2</p>
+            <span>5 mins ago</span>
+          </div>
+
+          <div class=3D"alert-box">
+            <p>Slot A1 became available</p>
+            <span>9 mins ago</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    Built with Python, OpenCV, Flask, HTML, CSS &amp; JavaScript =E2=9C=A8
+  </footer>
+
+  <!-- JavaScript -->
+ =20
+
+<!-- Code injected by live-server -->
+
+
+
+</body></html>
+------MultipartBoundary--f1x135s6Cda8zUJyYFJQTJw0cMkQpAz1A7hy6qGhcg----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://127.0.0.1:5501/frontend/style.css
+
+@charset "utf-8";
+
+* { margin: 0px; padding: 0px; box-sizing: border-box; }
+
+body { font-family: Arial, sans-serif; background: rgb(5, 8, 22); color: wh=
+ite; overflow-x: hidden; min-height: 100vh; }
+
+.background-glow { position: fixed; inset: 0px; background: radial-gradient=
+(circle at left top, rgba(16, 185, 129, 0.2), transparent 40%), radial-grad=
+ient(circle at right bottom, rgba(6, 182, 212, 0.2), transparent 40%); z-in=
+dex: -1; }
+
+.navbar { display: flex; justify-content: space-between; align-items: cente=
+r; padding: 20px 40px; border-bottom: 1px solid rgba(255, 255, 255, 0.1); b=
+ackdrop-filter: blur(10px); gap: 20px; }
+
+.navbar h1 { margin-bottom: 5px; color: rgb(52, 211, 153); font-size: 2rem;=
+ }
+
+.navbar p { color: rgb(148, 163, 184); font-size: 0.95rem; }
+
+.system-status { display: flex; align-items: center; gap: 10px; }
+
+.live-dot { width: 10px; height: 10px; border-radius: 50%; background: rgb(=
+34, 197, 94); animation: 1s ease 0s infinite normal none running pulse; }
+
+.container { padding: 30px; }
+
+.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax=
+(220px, 1fr)); gap: 20px; }
+
+.card { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, =
+255, 255, 0.1); padding: 25px; border-radius: 20px; backdrop-filter: blur(1=
+2px); transition: 0.3s; }
+
+.card:hover { transform: translateY(-5px); border-color: rgba(52, 211, 153,=
+ 0.4); }
+
+.card h3 { color: rgb(148, 163, 184); margin-bottom: 10px; font-size: 1rem;=
+ }
+
+.card h2 { font-size: 2.5rem; color: white; }
+
+.middle-section { display: grid; grid-template-columns: 2fr 1fr; gap: 25px;=
+ margin-top: 30px; }
+
+.camera-feed, .status-panel, .alerts-panel { background: rgba(255, 255, 255=
+, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 20px; p=
+adding: 20px; backdrop-filter: blur(12px); }
+
+.section-header { display: flex; justify-content: space-between; align-item=
+s: center; margin-bottom: 20px; }
+
+.section-header h2 { font-size: 1.3rem; }
+
+.live { color: rgb(239, 68, 68); font-weight: bold; letter-spacing: 1px; }
+
+.video-stream { width: 100%; border-radius: 15px; border: 2px solid rgba(25=
+5, 255, 255, 0.1); object-fit: cover; transition: 0.3s; }
+
+.video-stream:hover { transform: scale(1.01); }
+
+.side-panel { display: flex; flex-direction: column; gap: 20px; }
+
+.status-item, .alert-box { background: rgba(0, 0, 0, 0.3); padding: 15px; b=
+order-radius: 12px; margin-top: 10px; display: flex; justify-content: space=
+-between; align-items: center; transition: 0.3s; }
+
+.status-item:hover, .alert-box:hover { transform: translateX(4px); }
+
+.alert-box { flex-direction: column; align-items: flex-start; gap: 5px; }
+
+.alert-box span { color: rgb(148, 163, 184); font-size: 0.85rem; }
+
+.available { color: rgb(34, 197, 94); }
+
+.occupied { color: rgb(239, 68, 68); }
+
+footer { text-align: center; padding: 20px; color: rgb(148, 163, 184); bord=
+er-top: 1px solid rgba(255, 255, 255, 0.1); margin-top: 40px; }
+
+@keyframes pulse {=20
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+@media (max-width: 900px) {
+  .middle-section { grid-template-columns: 1fr; }
+  .navbar { flex-direction: column; text-align: center; }
+}
+
+@media (max-width: 600px) {
+  .container { padding: 20px; }
+  .navbar { padding: 20px; }
+  .navbar h1 { font-size: 1.5rem; }
+  .card h2 { font-size: 2rem; }
+  .video-stream { height: auto; }
+}
+------MultipartBoundary--f1x135s6Cda8zUJyYFJQTJw0cMkQpAz1A7hy6qGhcg------
