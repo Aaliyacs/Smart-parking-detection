@@ -55,3 +55,14 @@ smart-parking-detection/
 ├── carParkImg.png
 ├── requirements.txt
 └── README.md
+# 📸 Project Screenshots
+
+## Smart Parking Dashboard
+
+![Dashboard](screenshots/parking.png)
+
+---
+
+## Live Parking Detection
+
+![Parking Detection](screenshots/parking2.png)
