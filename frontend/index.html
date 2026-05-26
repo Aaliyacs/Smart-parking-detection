@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Smart Parking Dashboard</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Background Effect -->
+  <div class="background-glow"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+
+    <div>
+      <h1>Smart Parking Detection System</h1>
+      <p>Real-time AI powered parking monitoring dashboard</p>
+    </div>
+
+    <div class="system-status">
+      <span class="live-dot"></span>
+      <span>System Active</span>
+    </div>
+
+  </nav>
+
+  <!-- Main Container -->
+  <main class="container">
+
+    <!-- Statistics Cards -->
+    <section class="stats-grid">
+
+      <div class="card">
+        <h3>Total Slots</h3>
+        <h2 id="total-slots">0</h2>
+      </div>
+
+      <div class="card">
+        <h3>Occupied Slots</h3>
+        <h2 id="occupied-slots">0</h2>
+      </div>
+
+      <div class="card">
+        <h3>Available Slots</h3>
+        <h2 id="available-slots">0</h2>
+      </div>
+
+      <div class="card">
+        <h3>Occupancy</h3>
+        <h2 id="occupancy">0%</h2>
+      </div>
+
+    </section>
+
+    <!-- Middle Section -->
+    <section class="middle-section">
+
+      <!-- Live Video Feed -->
+      <div class="camera-feed">
+
+        <div class="section-header">
+          <h2>Live Parking Feed</h2>
+          <span class="live">LIVE</span>
+        </div>
+
+        <img
+          src="http://127.0.0.1:5000/video"
+          alt="Live Parking Feed"
+          class="video-stream"
+        />
+
+      </div>
+
+      <!-- Side Panel -->
+      <div class="side-panel">
+
+        <!-- Parking Status -->
+        <div class="status-panel">
+
+          <h2>Parking Status</h2>
+
+          <div class="status-item available">
+            <span>Slot A1</span>
+            <span>Available</span>
+          </div>
+
+          <div class="status-item occupied">
+            <span>Slot A2</span>
+            <span>Occupied</span>
+          </div>
+
+          <div class="status-item available">
+            <span>Slot B1</span>
+            <span>Available</span>
+          </div>
+
+          <div class="status-item occupied">
+            <span>Slot B2</span>
+            <span>Occupied</span>
+          </div>
+
+          <div class="status-item available">
+            <span>Slot C1</span>
+            <span>Available</span>
+          </div>
+
+          <div class="status-item occupied">
+            <span>Slot C2</span>
+            <span>Occupied</span>
+          </div>
+
+        </div>
+
+        <!-- Alerts Panel -->
+        <div class="alerts-panel">
+
+          <h2>Recent Alerts</h2>
+
+          <div class="alert-box">
+            <p>Parking occupancy reached 68%</p>
+            <span>2 mins ago</span>
+          </div>
+
+          <div class="alert-box">
+            <p>Vehicle detected at Slot B2</p>
+            <span>5 mins ago</span>
+          </div>
+
+          <div class="alert-box">
+            <p>Slot A1 became available</p>
+            <span>9 mins ago</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    Built with Python, OpenCV, Flask, HTML, CSS & JavaScript ✨
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>

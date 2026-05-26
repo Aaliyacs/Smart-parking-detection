@@ -1,0 +1,6 @@
+parking_data = {
+    "total": 0,
+    "occupied": 0,
+    "available": 0,
+    "occupancy": 0
+}
